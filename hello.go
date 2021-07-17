@@ -1,9 +1,13 @@
 package main
 
-import "fmt"
-import "github.com/aabeben/vini-vidi-vici-go/morestrings"
+import (
+	"fmt"
+	"github.com/aabeben/vini-vidi-vici-go/morestrings"
+	"github.com/google/go-cmp/cmp"
+)
 
 func main() {
 	fmt.Println(morestrings.ReverseRunes("!oG ,olleH"))
+	fmt.Println(cmp.Diff("Hello World", "Hello Go"))
 
 }
